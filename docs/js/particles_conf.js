@@ -36,11 +36,11 @@ const PARTICLES_CONF = {
         }
       },
       "size": {
-        "value": 10,
+        "value": 6,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 80,
+          "speed": 50,
           "size_min": 0.1,
           "sync": false
         }
@@ -54,7 +54,7 @@ const PARTICLES_CONF = {
       },
       "move": {
         "enable": true,
-        "speed": 12,
+        "speed": 5,
         "direction": "none",
         "random": false,
         "straight": false,
