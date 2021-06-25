@@ -73,6 +73,9 @@ section {
     background-color: ghostwhite;
     height: 100vh;
 }
+section#proyectos {
+    background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 30%);
+}
 section .container {
     *background-color: red;
     height: 80vh;
