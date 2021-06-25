@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: var(--sky_night);
+    *background-color: var(--sky_night);
     margin: 0;
 }
 
@@ -23,7 +23,7 @@ header{
 }
 /* Cover */
 #cover {
-    background-color: var(--sky_night);
+    *background-color: var(--sky_night);
     height: 90vh;
 }
 

@@ -8,7 +8,7 @@ const PARTICLES_CONF = {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#000"
       },
       "shape": {
         "type": "circle",
@@ -26,17 +26,17 @@ const PARTICLES_CONF = {
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.8,
         "random": false,
         "anim": {
           "enable": false,
           "speed": 1,
-          "opacity_min": 0.1,
+          "opacity_min": 0.4,
           "sync": false
         }
       },
       "size": {
-        "value": 6,
+        "value": 3,
         "random": true,
         "anim": {
           "enable": false,
@@ -48,7 +48,7 @@ const PARTICLES_CONF = {
       "line_linked": {
         "enable": true,
         "distance": 200,
-        "color": "#ffffff",
+        "color": "#000",
         "opacity": 0.4,
         "width": 2
       },
