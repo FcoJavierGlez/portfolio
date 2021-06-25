@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+.text-white {
+    color: white;
+}
+
 /* Header */
 header{
     background-color: transparent;
