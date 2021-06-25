@@ -1,5 +1,7 @@
 :root {
-
+    --black: #000;
+    --carbon: #212;
+    --sky_night: #001a57;
 }
 
 * {
@@ -8,4 +10,24 @@
 
 body {
     margin: 0;
+}
+
+/* Header */
+header{
+    background-color: var(--sky_night);
+    height: 10vh;
+    position: sticky;
+    z-index: 3;
+    top: 0%;
+}
+/* Cover */
+#cover {
+    background-color: var(--sky_night);
+    height: 90vh;
+}
+
+/* Section */
+section {
+    background-color: rebeccapurple;
+    height: 100vh;
 }
