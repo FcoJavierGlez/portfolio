@@ -8,7 +8,7 @@ const PARTICLES_CONF = {
         }
       },
       "color": {
-        "value": "random"
+        "value": "random"////"#000" || "random"
       },
       "shape": {
         "type": "circle",
@@ -48,8 +48,8 @@ const PARTICLES_CONF = {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#000",
-        "opacity": 0.75,
+        "color": "#000",//"#000" || "random"
+        "opacity": 1,
         "width": 1
       },
       "move": {
