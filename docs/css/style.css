@@ -74,7 +74,7 @@ section {
     height: 100vh;
 }
 section#proyectos {
-    background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 30%);
+    background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 25%);
 }
 section .container {
     *background-color: red;
