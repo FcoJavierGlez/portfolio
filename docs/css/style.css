@@ -9,12 +9,13 @@
 }
 
 body {
+    background-color: var(--sky_night);
     margin: 0;
 }
 
 /* Header */
 header{
-    background-color: var(--sky_night);
+    background-color: transparent;
     height: 10vh;
     position: sticky;
     z-index: 3;
@@ -28,6 +29,6 @@ header{
 
 /* Section */
 section {
-    background-color: rebeccapurple;
+    background-color: white;
     height: 100vh;
 }
