@@ -1,7 +1,7 @@
 const PARTICLES_CONF = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 60,
         "density": {
           "enable": true,
           "value_area": 800
@@ -71,12 +71,12 @@ const PARTICLES_CONF = {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
-          "mode": "push"
+          "enable": false,
+          "mode": "repulse"
         },
         "resize": true
       },
@@ -95,11 +95,11 @@ const PARTICLES_CONF = {
           "speed": 3
         },
         "repulse": {
-          "distance": 400,
+          "distance": 125,
           "duration": 0.4
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 6
         },
         "remove": {
           "particles_nb": 2
