@@ -50,7 +50,7 @@ const PARTICLES_CONF = {
         "distance": 200,
         "color": "#000",
         "opacity": 0.4,
-        "width": 2
+        "width": 1
       },
       "move": {
         "enable": true,
