@@ -69,7 +69,7 @@ header .fab, header .fas {
 
 /* Section */
 section {
-    background-color: white;
+    background-color: ghostwhite;
     height: 100vh;
 }
 section .container {
