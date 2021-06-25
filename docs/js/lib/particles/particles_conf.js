@@ -54,7 +54,7 @@ const PARTICLES_CONF = {
       },
       "move": {
         "enable": true,
-        "speed": 5,
+        "speed": 4,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -68,14 +68,14 @@ const PARTICLES_CONF = {
       }
     },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",//canvas || window
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "resize": true

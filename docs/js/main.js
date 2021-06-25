@@ -7,9 +7,9 @@
     const normalizeTransparency = value => value >= 1 ? 1 : value;
 
     const getParticlesNumber = value => {
-        if (window.innerWidth < 550 ) return 40;
-        else if (window.innerWidth < 750 ) return 55;
-        else if (window.innerWidth < 1050 ) return 70;
+        if (window.innerWidth < 550 ) return 25;
+        else if (window.innerWidth < 750 ) return 45;
+        else if (window.innerWidth < 1050 ) return 65;
         else return 80;
     }
 
