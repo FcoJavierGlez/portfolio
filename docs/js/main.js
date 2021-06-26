@@ -23,10 +23,27 @@
         particlesJS('cover', PARTICLES_CONF);
     
         document.addEventListener("scroll", () => {
-            //console.log(`rgb(40,40,40,${normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) )})`);
             HEADER.style.backgroundColor = `rgb(0,0,0,${normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) )})`;
             normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) ) > 0.3 ? 
                 HEADER.classList.add('text-white') : HEADER.classList.remove('text-white');
-        })
+        });
+
+        const swiper = new Swiper('.swiper-container', {//#carousel
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide: 2,
+            coverflowEffect: {
+              rotate: 75,
+              stretch: 0,
+              depth: 50,
+              modifier: 1,
+              slideShadows: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
     });
 }
