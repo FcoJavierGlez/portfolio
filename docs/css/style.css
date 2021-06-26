@@ -32,6 +32,10 @@ header{
     z-index: 3;
     top: 0%;
 }
+header.black {
+    background-color: black;
+    color: white;
+}
 header > div {
     display: flex;
     align-items: center;
@@ -76,6 +80,10 @@ section {
     background-color: ghostwhite;
     height: 100vh;
 }
+section.proyecto {
+    height: max-content;
+    min-height: 90vh;
+}
 section#proyectos {
     background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 25%);
 }
@@ -84,6 +92,10 @@ section .container {
     height: 80vh;
     position: relative;
     top: 10vh;
+}
+section.proyecto .container {
+    height: max-content;
+    top: 5vh;
 }
 
 /* Carousel */
