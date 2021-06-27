@@ -209,13 +209,20 @@ section.proyecto .container {
     transform: translate3d(0,0,0);
 }
 .hovereffect h2 {
+    background-color: var(--carbon);
+    border: 1px solid white;
     color: orange;
     font-weight: bold;
+    margin: 14px 0;
 }
 .hovereffect p {
     background-color: var(--carbon);
     border: 1px solid white;
     padding: 2px 0;
+}
+.hovereffect a:hover {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* Assets */
@@ -237,6 +244,9 @@ section.proyecto .container {
     background-size: contain;
     height: 35px;
     width: 35px;
+}
+.logo:hover {
+    cursor: pointer;
 }
 .angular {
     background-image: url();
