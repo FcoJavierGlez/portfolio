@@ -95,6 +95,9 @@
 .swiper-slide.hovereffect.swiper-slide-active {
     box-shadow: 0 0 20px 2px lightslategrey;
 }
+.swiper-slide.hovereffect p {
+    text-align: center;
+}
 
 @keyframes pulse {
     0% { color: white; }

@@ -21,6 +21,11 @@ h6 {
     text-align: center;
 }
 
+p {
+    padding: 0 8px;
+    text-align: justify;
+}
+
 .text-white {
     color: white;
 }
@@ -87,6 +92,7 @@ section {
 section.proyecto {
     height: max-content;
     min-height: 90vh;
+    padding-bottom: 50px;
 }
 section#proyectos {
     background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 25%);
@@ -162,6 +168,73 @@ section.proyecto .container {
 .socket-io {
     background-image: url(../img/assets/socketio.png);
     border-radius: 50%;
+}
+
+/* PROYECTO */
+/* Links proyecto */
+.links {
+    align-items: center;
+    column-gap: 10px;
+    display: flex;
+    height: 60px;
+    margin: 12px 0;
+}
+a.github,
+a.youtube,
+a.deploy {
+    color: white;
+    padding: 10px 14px;
+    border-radius: 30px;
+}
+a.github,
+a.youtube,
+a.deploy:hover {
+    text-decoration: none;
+}
+a.github {
+    background-color: black;
+}
+a.youtube {
+    background-color: red;
+}
+a.deploy {
+    background-color: steelblue;
+}
+a.github:hover {
+    box-shadow: 0 0 10px 1px black;
+}
+a.youtube:hover {
+    box-shadow: 0 0 10px 1px red;
+}
+a.deploy:hover {
+    box-shadow: 0 0 10px 1px steelblue;
+}
+
+/* Article proyecto */
+section.proyecto article {
+    padding-bottom: 15px;
+}
+.tech {
+    margin: 15px 0;
+}
+.bookmark {
+    margin: 8px 0;
+}
+.bookmark h4 {
+    text-align: left;
+}
+.bookmark hr {
+    border-color: var(--sky_night);
+    margin-left: 0;
+    width: 90%;
+}
+.icon-tech {
+    display: flex;
+    justify-content: center;
+    margin: 6px 0;
+}
+.icon-tech img{
+    max-width: 100%;
 }
 
 @media screen and (min-width: 550px) {
