@@ -246,24 +246,28 @@ section.proyecto .container {
     width: 35px;
 }
 .logo:hover {
+    box-shadow: 0 0 6px 1px dimgray;
     cursor: pointer;
+    transform: scale(1.1);
 }
 .angular {
     background-image: url();
 }
 .css {
+    background-color: white;
     background-image: url(../img/assets/css.png);
 }
 .express {
     background-image: url(../img/assets/express.png);
 }
 .html {
+    background-color: white;
     background-image: url(../img/assets/html.png);
 }
 .java {
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
     background-image: url(../img/assets/java.png);
+    border-radius: 50%;
 }
 .javascript {
     background-image: url(../img/assets/javascript.png);
@@ -275,11 +279,12 @@ section.proyecto .container {
     background-image: url(../img/assets/php.png);
 }
 .react {
-    border-radius: 50%;
     background-image: url(../img/assets/react.png);
+    border-radius: 50%;
 }
 .socket-io {
     background-image: url(../img/assets/socketio.png);
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 550px) {

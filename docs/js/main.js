@@ -17,37 +17,27 @@
         const HEADER = document.getElementsByTagName("header")[0];
         const COVER  = document.getElementById("cover");
 
+        /* Particles */
         PARTICLES_CONF.particles.number.value = getParticlesNumber(window.innerWidth);
         if (window.innerWidth < 500) PARTICLES_CONF.particles.move.speed = 8;
     
         particlesJS('cover', PARTICLES_CONF);
     
+        /* Animación scroll header - nav */
         document.addEventListener("scroll", () => {
             HEADER.style.backgroundColor = `rgb(0,0,0,${normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) )})`;
             normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) ) > 0.3 ? 
                 HEADER.classList.add('text-white') : HEADER.classList.remove('text-white');
         });
 
-        const swiper = new Swiper('.swiper-container', {//#carousel
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            initialSlide: 2,
-            coverflowEffect: {
-              rotate: 75,
-              stretch: 0,
-              depth: 50,
-              modifier: 1,
-              slideShadows: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-              el: ".swiper-pagination",
-            },
+        //Swiper (carousel)
+        const swiper = new Swiper('.swiper-container', SWIPER_CONF);
+
+        //Jquey UI - Tooltip
+        $( function() {
+          $( document ).tooltip({
+            track: true
           });
+        });
     });
 }
