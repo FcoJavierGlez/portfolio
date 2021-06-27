@@ -221,6 +221,7 @@ section.proyecto .container {
     padding: 2px 0;
 }
 .hovereffect a:hover {
+    color: lightskyblue;
     font-weight: bold;
     text-decoration: none;
 }
