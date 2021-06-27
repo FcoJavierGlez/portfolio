@@ -236,6 +236,10 @@ section.proyecto article {
 .icon-tech img{
     max-width: 100%;
 }
+.example {
+    margin: 0 auto;
+    width: 95%;
+}
 .example img {
     max-width: 100%;
 }
