@@ -194,6 +194,7 @@ section.proyecto .container {
     background-image: url(../img/assets/html.png);
 }
 .java {
+    background-color: white;
     background-image: url(../img/assets/java.png);
     border-radius: 50%;
 }
