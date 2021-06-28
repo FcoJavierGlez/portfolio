@@ -157,18 +157,6 @@ section.proyecto .container {
 }
 
 /* Assets */
-.assets {
-    background-color: rgba(255, 255, 255, 0.75);
-    border: 2px solid white;
-    border-radius: 10px;
-    column-gap: 4px;
-    display: flex;
-    height: 35%;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 4px 0;
-    row-gap: 4px;
-}
 .logo {
     background-position: center;
     background-repeat: no-repeat;
@@ -220,6 +208,18 @@ section.proyecto .container {
 }
 
 /* PROYECTO */
+/* Swiper description */
+.description {
+    align-items: center;
+    background-color: var(--carbon);
+    border: 1px solid white;
+    color: white;
+    justify-content: center;
+    padding: 2px 0;
+    display: flex;
+    height: 37%;
+}
+
 /* Links proyecto */
 .links {
     align-items: center;
