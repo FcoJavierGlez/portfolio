@@ -151,6 +151,10 @@ section.proyecto {
     min-height: 90vh;
     padding-bottom: 50px;
 }
+section#proyectos, section#autor {
+    position: relative;
+    top: -10vh;
+}
 section#proyectos {
     background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 25%);
 }
