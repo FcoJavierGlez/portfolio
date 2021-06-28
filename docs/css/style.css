@@ -376,3 +376,26 @@ p.alert {
         transform: rotate( 356deg );
     }
 }
+@media screen and (max-height: 700px) {
+    header {
+        height: 20vh;
+    }
+    div#cover {
+        height: 80vh;
+    }
+    .intro-message p {
+        font-size: 35px;
+    }
+    section .container {
+        top: 20vh;
+    }
+    .swiper-container {
+        padding-top: 0;
+    }
+    .last-projects {
+        margin: 10px auto;
+    }
+    section {
+        min-height: 775px;
+    }
+}
