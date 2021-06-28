@@ -17,6 +17,8 @@
         const HEADER = document.getElementsByTagName("header")[0];
         const COVER  = document.getElementById("cover");
 
+        screen.orientation.lock('portrait');
+
         /* Particles */
         PARTICLES_CONF.particles.number.value = getParticlesNumber(window.innerWidth);
         if (window.innerWidth < 500) PARTICLES_CONF.particles.move.speed = 8;
