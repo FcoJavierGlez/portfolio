@@ -65,6 +65,99 @@
                 <hr>
                 <h6>Gestor de contraseñas web</h6>
             </div>
+            <div class="links">
+                <a href="https://github.com/FcoJavierGlez/KeysBank" class="github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                </a>
+                <!-- <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube">
+                    </i> Demo
+                </a>
+                <a href="#" class="deploy" target="_blank">
+                    <i class="fas fa-globe"></i> Demo
+                </a> -->
+            </div>
+            <article>
+                <div class="tech">
+                    <img src="https://img.shields.io/badge/PHP-7.4.1-9cf" alt="version_php">
+                    <img src="https://img.shields.io/badge/version-1.0.1-blue" alt="version">
+                </div>
+                <div class="bookmark">
+                    <h4>Acerca del proyecto</h4>
+                    <hr>
+                </div>
+                <p>
+                    <b>KeysBank es una aplicación web de gestión de contraseñas</b> diseñada tanto para uso privado cómo público.
+                </p>
+                <p>
+                    Los usuarios con un estado 'activo' podrán registrar, editar y eliminar sus cuentas cuando lo requieran, beneficiándose de las herramientas que la app pone a su disposición cómo:
+                </p>
+                <ul>
+                    <li><b>Un generador de contraseñas aleatorias que ofrece la contraseña más robusta posible para las características solicitadas.</b></li>
+                    <li><b>Alertas de nick usados en otras cuentas registradas.</b></li>
+                    <li><b>Alerta de contraseña demasiado antigua.</b></li>
+                    <li><b>Capacidad de copiar al portapapeles la contraseña de una cuenta para un inicio de sesión rápido y cómodo.</b></li>
+                </ul>
+                <p>
+                    En una aplicación de estas características es <b>fundamental la seguridad</b>. Por tanto, para garantizar un servicio robusto y evitar posibles filtraciones de información sensible la app se construye sobre 4 pilares:
+                </p>
+                <ul>
+                    <li><b>Base de datos encriptada.</b></li>
+                    <li><b>Protección ante posibles inyecciones SQL.</b></li>
+                    <li><b>Consultas a la API para obtención dinámica de recursos o información (evitando el uso de información sensible en el árbol DOM).</b></li>
+                    <li><b>Navegación y enrutamiento seguro según el perfil y los datos asociados.</b></li>
+                </ul>
+                <div class="bookmark">
+                    <h4>Tecnologías empleadas</h4>
+                    <hr>
+                </div>
+                <div class="icon-tech">
+                    <img src="../../img/proyect_tech/keysbank_tech.png" alt="tecnologías usadas en este proyecto">
+                </div>
+                <p>
+                    KeysBank se ejecuta en un servidor <b>Apache</b>, emplea <b>PHP</b> como lenguaje del backend 
+                    y <b>MySQL</b> como base de datos. Del lado del frontend usa <b>JavaScript Vanilla</b>.
+                </p>
+                <div class="bookmark">
+                    <h4>¿Qué puede hacer?</h4>
+                    <hr>
+                </div>
+                <p>
+                    Con una cuenta usuario cuyo estado sea "activo" podrás:
+                </p>
+                <ul>
+                    <li>
+                        <b>Agregar, editar y eliminar cuentas</b> que cualquier usuario podrá leer. 
+                        <b>Todos los mensajes irán precedidos de la hora y el nick del emisor</b>.
+                    </li>
+                    <li>
+                        Cuando un nuevo usuario se conecte o desconecte podrás ver los <b>mensajes de usuario conectado o desconectado</b> en el chat,
+                        además, <b>en el panel de usuarios online verás los usuarios actualmente en línea (incluyéndote a ti mismo/a)</b>.
+                    </li>
+                    <li>
+                        <b>Podrás mandar mensajes privados que únicamente el emisor y el receptor podrán leer</b>. 
+                        Para mandar un mensaje privado debes escribir: 
+                        <b>"@nickDelUsuarioDestinatario 'El mensaje privado que quieres mandar'"</b>
+                    </li>
+                    <li>
+                        <b>Actualmente reconoce un comando</b>. El comando permite realizar tiradas de dados de los siguientes tipos:
+                        <ul>
+                            <li>Dado de 4 caras</li>
+                            <li>Dado de 6 caras</li>
+                            <li>Dado de 8 caras</li>
+                            <li>Dado de 10 caras</li>
+                            <li>Dado de 12 caras</li>
+                            <li>Dado de 20 caras</li>
+                            <li>Dado de 100 caras</li>
+                        </ul>
+                        Para ello debes escribir este comando: <b>"/2d10+4*2"</b> <i class="fas fa-arrow-right"></i> 
+                        <b>Lanzará 2 dados de 10 caras y al resultado sumará 4 y repetirá la tirada</b>
+                    </li>
+                </ul>
+                <div class="example">
+                    <img src="../../img/examples/ejemplo_chat.PNG" alt="ejemplo de chat">
+                    <!-- <small>Durante la simulación ningún intruso resultó herido</small> -->
+                </div>
+            </article>
         </div>
     </section>
 </body>
