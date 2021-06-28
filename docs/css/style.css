@@ -97,7 +97,8 @@ header .fas:hover {
     width: 80%;
     z-index: 1;
 }
-.intro::before, .intro::after  {
+.intro::before, 
+.intro::after  {
     content: "";
     position: absolute;
     width: 100%;
