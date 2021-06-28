@@ -378,10 +378,13 @@ p.alert {
 }
 @media screen and (max-height: 700px) {
     header {
-        height: 20vh;
+        height: 77.5px;
     }
     div#cover {
-        height: 80vh;
+        height: 697.5px;
+    }
+    .intro {
+        top: 140px;
     }
     .intro-message p {
         font-size: 35px;
