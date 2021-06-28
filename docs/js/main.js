@@ -14,7 +14,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        const HEADER = document.getElementsByTagName("header")[0];
+        const NAV = document.getElementsByTagName("nav")[0];
         const COVER  = document.getElementById("cover");
 
         /* Particles */
@@ -23,11 +23,11 @@
     
         particlesJS('cover', PARTICLES_CONF);
     
-        /* Animación scroll header - nav */
+        /* Animación scroll nav */
         document.addEventListener("scroll", () => {
-            HEADER.style.backgroundColor = `rgb(0,0,0,${normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) )})`;
+            NAV.style.backgroundColor = `rgb(0,0,0,${normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) )})`;
             normalizeTransparency( (window.scrollY/COVER.clientHeight).toFixed(1) ) > 0.3 ? 
-                HEADER.classList.add('text-white') : HEADER.classList.remove('text-white');
+                NAV.classList.add('text-white') : NAV.classList.remove('text-white');
         });
 
         //Swiper (carousel)
