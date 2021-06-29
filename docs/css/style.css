@@ -134,6 +134,7 @@ nav .fas:hover {
 /* Section */
 .title hr {
     border-color: red;
+    margin: 10px auto 15px;
 }
 section {
     background-color: ghostwhite;
@@ -300,6 +301,7 @@ section.proyecto article {
 .bookmark hr {
     border-color: var(--sky_night);
     margin-left: 0;
+    margin-top: 2px;
     width: 90%;
 }
 .icon-tech {
@@ -366,7 +368,8 @@ div#photo-autor > a {
     height: 184px;
     width: 135px;
 }
-.knowledge {
+.knowledge, 
+.qualifications {
     background-color: white;
     border: 2px solid;
     border-radius: 15px;
@@ -376,6 +379,36 @@ div#photo-autor > a {
 }
 .knowledge hr {
     border-color: var(--skynight);
+    margin: 2px auto 15px;
+}
+
+.qualifications {
+    align-items: center;
+    column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    row-gap: 20px;
+}
+.qualification {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+}
+.qualification h5 {
+    color: white;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    top: 135px;
+    width: 95%;
+}
+.openwebinars {
+    background-image: url(../img/qualifications/openwebinars.png);
 }
 
 @media screen and (min-width: 550px) {
@@ -446,6 +479,16 @@ div#photo-autor > a {
     .icon-tech .logo {
         height: 150px;
         width: 150px;
+    }
+    #photo-autor {
+        height: 270px;
+        width: 200px;
+    }
+    div#photo-autor > a {
+        height: 270px;
+        left: -2px;
+        top: -2px;
+        width: 200px;
     }
 }
 @media screen and (min-width: 1200px) {

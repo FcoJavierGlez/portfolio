@@ -39,5 +39,11 @@
             track: true
           });
         });
+
+        /* $( function() {
+            $( "#accordion" ).accordion({
+              collapsible: true
+            });
+        }); */
     });
 }
