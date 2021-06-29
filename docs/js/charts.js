@@ -4,6 +4,8 @@
  * MGráficas del portfolio
  */
 document.addEventListener("DOMContentLoaded", () => {
+    Chart.defaults.elements.arc.borderWidth = 0;
+
     const CHART_JS = new Chart(
         document.getElementById('knowledge_js'),
         CHART_CONFIG.config_js
