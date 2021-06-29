@@ -22,7 +22,7 @@ const data_ts = {
     ],
     datasets: [{
         label: 'TypeScript',
-        data: [40, 60],
+        data: [35, 65],
         backgroundColor: [
             'rgb(0, 100, 200)',
             'rgba(0,0,0,0)',
@@ -108,7 +108,7 @@ const data_angular = {
     ],
     datasets: [{
         label: 'Angular',
-        data: [30, 70],
+        data: [25, 75],
         backgroundColor: [
             'rgb(230, 25, 25)',
             'rgba(0,0,0,0)',
@@ -142,9 +142,26 @@ const data_socketio = {
     ],
     datasets: [{
         label: 'socket.io',
-        data: [30, 70],
+        data: [20, 80],
         backgroundColor: [
             'rgb(150, 150, 150)',
+            'rgba(0,0,0,0)',
+        ],
+        hoverBorderColor: 'black',
+        hoverOffset: 0,
+        offSet: 0
+    }]
+};
+const data_mongoose = {
+    labels: [
+        'Mongoose',
+        /* 'Unknown', */
+    ],
+    datasets: [{
+        label: 'Mongoose',
+        data: [15, 85],
+        backgroundColor: [
+            'rgb(170, 0, 0)',
             'rgba(0,0,0,0)',
         ],
         hoverBorderColor: 'black',
@@ -177,7 +194,7 @@ const data_mongodb = {
     ],
     datasets: [{
         label: 'MongoDB',
-        data: [35, 65],
+        data: [20, 80],
         backgroundColor: [
             'rgb(0, 125, 0)',
             'rgba(0,0,0,0)',

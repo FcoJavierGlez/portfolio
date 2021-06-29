@@ -76,6 +76,11 @@
             document.getElementById('knowledge_socketio'),
             CHART_CONFIG.config_socketio
         );
+        const CHART_MONGOOSE = new Chart(
+            document.getElementById('knowledge_mongoose'),
+            CHART_CONFIG.config_mongoose
+        );
+
         const CHART_MYSQL = new Chart(
             document.getElementById('knowledge_mysql'),
             CHART_CONFIG.config_mysql

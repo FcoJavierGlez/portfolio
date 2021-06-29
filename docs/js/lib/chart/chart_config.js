@@ -44,6 +44,11 @@ const CHART_CONFIG = {
         data: data_socketio,
         options: {}
     },
+    config_mongoose: {
+        type: 'doughnut',
+        data: data_mongoose,
+        options: {}
+    },
     config_mysql: {
         type: 'doughnut',
         data: data_mysql,
