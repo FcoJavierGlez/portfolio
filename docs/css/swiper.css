@@ -34,3 +34,7 @@
 .swiper-button-next{
     right: 0;
 }
+div.last-projects h3 {
+    margin-bottom: 0;
+    font-size: 26px;
+}

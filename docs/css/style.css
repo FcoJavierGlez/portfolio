@@ -17,12 +17,6 @@ body {
     margin: 0;
 }
 
-header {
-    height: 10vh;
-    position: relative;
-    top: -10vh;
-}
-
 h1,
 h2,
 h3,
@@ -33,6 +27,7 @@ h6 {
 }
 
 p {
+    color: black;
     padding: 0 8px;
     text-align: justify;
 }
@@ -90,8 +85,6 @@ nav .fas:hover {
 /* Cover */
 #cover {
     height: 90vh;
-    position: relative;
-    top: -10vh;
 }
 .intro {
     align-items: center;
@@ -101,7 +94,7 @@ nav .fas:hover {
     justify-content: center;
     margin: 0 10%;
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     width: 80%;
     z-index: 1;
 }
@@ -150,10 +143,6 @@ section.proyecto {
     height: max-content;
     min-height: 90vh;
     padding-bottom: 50px;
-}
-section#proyectos, section#autor {
-    position: relative;
-    top: -10vh;
 }
 section#proyectos {
     background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 25%);
@@ -318,6 +307,36 @@ p.alert {
     text-align: justify;
 }
 
+/* Autor */
+.autor-box {
+    -webkit-border-start: 3px solid currentcolor;
+    border-inline-start: 3px solid currentcolor;
+}
+#photo-autor {
+    background-image: url(../img/FJGS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid var(--sky_night);
+    border-radius: 50%;
+    height: 184px;
+    filter: brightness(1.1);
+    margin: 10px auto;
+    width: 135px;
+}
+#photo-autor:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+div#photo-autor > a {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    display: block;
+    height: 184px;
+    width: 135px;
+}
+
 @media screen and (min-width: 550px) {
     * {
         font-size: 1rem;
@@ -371,7 +390,7 @@ p.alert {
         width: 60%;
     }
     .swiper-container {
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
     .swiper-button-prev {
         left: 4px;
