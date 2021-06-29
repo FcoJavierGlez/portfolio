@@ -217,7 +217,6 @@ section.proyecto .container {
 
 /* Separadores */
 .separate {
-    /* background-color: white; */
     background-color: rgb(225,225,240,0.25);
     display: flex;
     flex-flow: column;
@@ -237,7 +236,7 @@ section.proyecto .container {
     border-bottom-right-radius: 25px;
 } */
 .separate hr {
-    border-color: var(--sky_night);
+    border-color: darkblue;
     margin: 0;
 }
 .separate h4 {
@@ -310,7 +309,7 @@ section.proyecto article {
     text-align: left;
 }
 .bookmark hr {
-    border-color: var(--sky_night);
+    border-color: darkblue;
     margin-left: 0;
     margin-top: 2px;
     width: 90%;
@@ -353,7 +352,9 @@ p.alert {
     border-inline-start: 3px solid currentcolor;
 }
 .autor-description b {
-    color: cornflowerblue;
+    background-color: white;
+    color: darkblue;
+    padding: 3px;
 }
 #photo-autor {
     background-image: url(../img/FJGS.png);
@@ -376,20 +377,14 @@ div#photo-autor > a {
     top: -2px;
     left: -2px;
     display: block;
-    height: 184px;
-    width: 135px;
-}
-.knowledge, 
-.qualifications {
-    /* background-color: white;
-    border: 2px solid;
-    border-radius: 15px; */
+    height: 150px;
+    width: 110px;
 }
 .knowledge h5 {
     margin: 8px 0;
 }
 .knowledge hr {
-    border-color: var(--skynight);
+    border-color: darkblue;
     border-style: dashed;
     margin: 2px auto 15px;
     width: 85%;
@@ -461,6 +456,10 @@ div#photo-autor > a {
         height: 184px;
         width: 135px;
     }
+    div#photo-autor > a {
+        height: 184px;
+        width: 135px;
+    }
 }
 @media screen and (min-width: 860px) {
     .intro-message p {
@@ -499,8 +498,6 @@ div#photo-autor > a {
     }
     div#photo-autor > a {
         height: 270px;
-        left: -2px;
-        top: -2px;
         width: 200px;
     }
 }
@@ -540,9 +537,6 @@ div#photo-autor > a {
     .swiper-container {
         padding-top: 0;
     }
-    /* .last-projects {
-        margin: 10px auto;
-    } */
     section {
         min-height: 775px;
     }
