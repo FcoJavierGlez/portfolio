@@ -369,9 +369,10 @@ p.alert {
     margin: 10px auto;
     width: 110px;
 }
-#photo-autor:hover {
-    transform: scale(1.1);
+#photo-autor:hover,
+.qualification:hover {
     filter: brightness(1.2);
+    transform: scale(1.02);
 }
 div#photo-autor > a {
     position: relative;
@@ -400,6 +401,9 @@ div#photo-autor > a {
     justify-content: center;
     padding: 10px 5px;
     row-gap: 20px;
+}
+.qualifications a:hover {
+    text-decoration: none;
 }
 .qualification {
     background-position: center;
