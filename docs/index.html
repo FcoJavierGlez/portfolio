@@ -20,6 +20,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/hover_effects.css">
+    <link rel="stylesheet" href="css/charts.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- jQuery 3.6.0 CDN -->
@@ -32,6 +33,10 @@
     <!-- Swiper JS -->
     <script src="js/lib/swiper/swiper_config.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/lib/chart/chart_data.js"></script>
+    <script src="js/lib/chart/chart_config.js"></script>
     <!-- My Script -->
     <script src="js/main.js"></script>
 
@@ -41,7 +46,7 @@
     <nav>
         <div>
             <div>
-                <a href="index.html"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-home"></i></a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#autor">Autor</a>
             </div>
@@ -77,8 +82,13 @@
                 <hr>
             </div>
             <div class="swiper-container" >
-                <div class="last-projects">
+                <!-- <div class="last-projects">
                     <h3>Últimos proyectos</h3>
+                </div> -->
+                <div class="separate">
+                    <hr>
+                    <h4>Últimos proyectos</h4>
+                    <hr>
                 </div>
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -173,12 +183,71 @@
                 <hr>
             </div>
             <div class="container-sm">
-                <div id="photo-autor" title="Fco Javier Glez Sabariego">
-                    <a href="https://www.linkedin.com/in/francisco-javier-gonz%C3%A1lez-sabariego-51052a175/" target="_blank"></a>
-                </div>
                 <div class="autor-box">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    <div id="photo-autor" title="Fco Javier Glez Sabariego">
+                        <a href="https://www.linkedin.com/in/francisco-javier-gonz%C3%A1lez-sabariego-51052a175/" target="_blank"></a>
+                    </div>
+                    <div class="autor-description">
+                        <p>
+                            Hola, me llamo <b>Francisco Javier</b> y soy <b>fullstack web developer</b>.
+                        </p>
+                        <p>
+                            Soy <b>creativo y autodidacta</b>. Me apasionan los retos,
+                            <b>ser resolutivo</b> es motivo de <b>superación y crecimiento profesional</b>.
+                        </p>
+                    </div>
+                </div>
+                <div class="separate">
+                    <hr>
+                    <h4>Aptitudes</h4>
+                    <hr>
+                </div>
+                <div class="knowledge">
+                    <h5>Lenguajes de programación</h5>
+                    <hr>
+                    <div class="charts">
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_java"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_python"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_php"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_js"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_ts"></canvas>
+                        </div>
+                    </div>
+                    <h5>Librerías y frameworks</h5>
+                    <hr>
+                    <div class="charts">
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_react"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_angular"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_socketio"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_express"></canvas>
+                        </div>
+                    </div>
+                    <h5>Bases de datos</h5>
+                    <hr>
+                    <div class="charts">
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_mysql"></canvas>
+                        </div>
+                        <div class="container_chart_round">
+                            <canvas id="knowledge_mongodb"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

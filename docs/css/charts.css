@@ -1,0 +1,27 @@
+.charts {
+    align-items: center;
+    column-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container_chart_round {
+    margin: 10px auto;
+    height: max-content;
+    width: 26vw;
+}
+
+@media screen and (min-width: 500px) {
+    .container_chart_round {
+        margin: 25px auto;
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container_chart_round {
+        margin: 25px auto;
+        width: 10vw;
+    }
+}
