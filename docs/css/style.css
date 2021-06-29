@@ -409,8 +409,9 @@ div#photo-autor > a {
     height: 200px;
     width: 200px;
 }
-.qualification h5 {
+.qualification h4 {
     color: white;
+    font-size: 20px;
     margin: 0 auto;
     padding: 5px;
     position: relative;
