@@ -388,7 +388,7 @@ div#photo-autor > a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px;
+    padding: 10px 5px;
     row-gap: 20px;
 }
 .qualification {
