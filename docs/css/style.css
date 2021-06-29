@@ -221,8 +221,8 @@ section.proyecto .container {
     flex-flow: column;
     height: 62px;
     justify-content: space-between;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin: 25px auto 15px auto;
+    width: 94%;
 }
 .separate hr {
     border-color: var(--sky_night);
