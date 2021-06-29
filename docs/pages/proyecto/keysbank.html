@@ -81,16 +81,7 @@
                 </div>
                 <p>
                     <b>KeysBank es una aplicación web de gestión de contraseñas</b> diseñada tanto para uso privado cómo público.
-                </p>
-                <p>
-                    Los usuarios con un estado 'activo' podrán registrar, editar y eliminar sus cuentas cuando lo requieran, beneficiándose de las herramientas que la app pone a su disposición cómo:
-                </p>
-                <ul>
-                    <li><b>Un generador de contraseñas aleatorias que ofrece la contraseña más robusta posible para las características solicitadas.</b></li>
-                    <li><b>Alertas de nick usados en otras cuentas registradas.</b></li>
-                    <li><b>Alerta de contraseña demasiado antigua.</b></li>
-                    <li><b>Capacidad de copiar al portapapeles la contraseña de una cuenta para un inicio de sesión rápido y cómodo.</b></li>
-                </ul>
+                </p>                
                 <p>
                     En una aplicación de estas características es <b>fundamental la seguridad</b>. Por tanto, para garantizar un servicio robusto y evitar posibles filtraciones de información sensible la app se construye sobre 4 pilares:
                 </p>
@@ -100,6 +91,10 @@
                     <li><b>Consultas a la API para obtención dinámica de recursos o información (evitando el uso de información sensible en el árbol DOM).</b></li>
                     <li><b>Navegación y enrutamiento seguro según el perfil y los datos asociados.</b></li>
                 </ul>
+                <p>
+                    La arquitectura empleada para esta aplicación es un <b>Modelo-Vista-Controlador</b> sustentada de una <b>API-REST</b> 
+                    para la recuperación de datos de las cuentas de lo usuarios.
+                </p>
                 <!-- <p class="alert alert-info"></p> -->
                 <!-- <p class="alert alert-danger"></p> -->
 
@@ -141,7 +136,13 @@
                                 <b>Eliminar una cuenta propietaria</b>.
                             </li>
                             <li>
-                                <b>Beneficiarte de las herramientas que la app pone a tu disposición par ala gestión de tus cuentas propietarias</b>.
+                                <b>Beneficiarte de las herramientas que la app pone a tu disposición para la gestión de tus cuentas propietarias</b>.
+                                <ol>
+                                    <li><b>Un generador de contraseñas aleatorias que ofrece la contraseña más robusta posible para las características solicitadas.</b></li>
+                                    <li><b>Alertas de nick usados en otras cuentas registradas.</b></li>
+                                    <li><b>Alerta de contraseña demasiado antigua.</b></li>
+                                    <li><b>Capacidad de copiar al portapapeles la contraseña de una cuenta para un inicio de sesión rápido y cómodo.</b></li>
+                                </ol>
                             </li>
                         </ul>
                     </li>
