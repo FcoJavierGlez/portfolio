@@ -74,7 +74,7 @@ nav .fas {
 }
 nav .fab:hover,
 nav .fas:hover {
-    animation: scaleUp 1.5s forwards;
+    transform: scale(1.05);
 }
 
 @keyframes scaleUp {
@@ -164,6 +164,81 @@ section.proyecto .container {
     padding-top: 5vh;
 }
 
+/* Div - Buttons */
+a.button {
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin: 10% auto;
+    width: 225px;
+}
+a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+a.button.other-projects {
+    background-color: steelblue;
+}
+a.cv {
+    background-color: orange;
+    margin: 50px auto;
+}
+.content-gears {
+    flex-grow: 1;
+}
+.gears {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 46px;
+    margin: auto;
+    width: 46px;
+}
+.gear {
+    background-image: url(../img/assets/gear.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.gear.back {
+    animation: gearRotationReverse linear 3s infinite;
+    height: 20px;
+    left: 7px;
+    position: relative;
+    top: 5px;
+    width: 20px;
+}
+.gear.front {
+    animation: gearRotation linear 3s infinite;
+    height: 30px;
+    left: 9px;
+    position: relative;
+    top: -10px;
+    width: 30px;
+}
+.text {
+    font-weight: bold;
+    margin-left: 14px;
+}
+.other-projects-text {
+    flex-grow: 3;
+}
+
+@keyframes gearRotation {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes gearRotationReverse {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Assets */
 .logo {
     background-position: center;
@@ -178,40 +253,40 @@ section.proyecto .container {
     transform: scale(1.1);
 }
 .angular {
-    background-image: url();
+    background-image: url(../img/assets/logos/angular.png);
 }
 .css {
-    background-image: url(../img/assets/css.png);
+    background-image: url(../img/assets/logos/css.png);
 }
 .express {
-    background-image: url(../img/assets/express.png);
+    background-image: url(../img/assets/logos/express.png);
 }
 .html {
-    background-image: url(../img/assets/html.png);
+    background-image: url(../img/assets/logos/html.png);
 }
 .java {
-    background-image: url(../img/assets/java.png);
+    background-image: url(../img/assets/logos/java.png);
     border-radius: 50%;
 }
 .javascript {
-    background-image: url(../img/assets/javascript.png);
+    background-image: url(../img/assets/logos/javascript.png);
 }
 .mysql {
-    background-image: url(../img/assets/mysql.png);
+    background-image: url(../img/assets/logos/mysql.png);
 }
 .next {
-    background-image: url(../img/assets/next.png);
+    background-image: url(../img/assets/logos/next.png);
     border-radius: 50%;
 }
 .php {
-    background-image: url(../img/assets/php.png);
+    background-image: url(../img/assets/logos/php.png);
 }
 .react {
-    background-image: url(../img/assets/react.png);
+    background-image: url(../img/assets/logos/react.png);
     border-radius: 50%;
 }
 .socket-io {
-    background-image: url(../img/assets/socketio.png);
+    background-image: url(../img/assets/logos/socketio.png);
     border-radius: 50%;
 }
 
@@ -222,7 +297,7 @@ section.proyecto .container {
     flex-flow: column;
     height: 62px;
     justify-content: space-between;
-    margin: 20px auto 15px auto;
+    margin: 35px auto 15px auto;
     width: 94%;
 }
 /* .separate::before {
@@ -344,6 +419,24 @@ p.alert {
     text-align: justify;
 }
 
+/* Old projects */
+.year-projects {
+    align-items: center;
+    column-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+    row-gap: 15px;
+}
+.old-project.hovereffect {
+    height: 275px;
+    width: 275px;
+}
+.old-project.hovereffect img {
+    height: 100%;
+}
+
 /* Autor */
 /* .autor-box {
 
@@ -358,7 +451,7 @@ p.alert {
     padding: 3px;
 }
 #photo-autor {
-    background-image: url(../img/FJGS.png);
+    background-image: url(../img/assets/FJGS.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -386,11 +479,15 @@ div#photo-autor > a {
     font-size: 20px;
     margin: 8px 0;
 }
-.knowledge hr {
+.knowledge hr,
+.projects hr {
     border-color: darkblue;
     border-style: dashed;
     margin: 2px auto 15px;
     width: 85%;
+}
+.projects {
+    margin-top: 30px;
 }
 
 .qualifications {

@@ -35,9 +35,9 @@
 
         //Jquey UI - Tooltip
         $( function() {
-          $( document ).tooltip({
-            track: true
-          });
+            $( document ).tooltip({
+                track: true
+            });
         });
 
         /* $( function() {

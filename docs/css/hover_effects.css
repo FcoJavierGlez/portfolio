@@ -82,6 +82,7 @@
     background-color: var(--carbon);
     border: 1px solid white;
     padding: 2px 0;
+    text-align: center;
 }
 .hovereffect a {
     animation: pulse 2.5s infinite;
