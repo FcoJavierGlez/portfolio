@@ -637,6 +637,9 @@ div#photo-autor > a {
     .swiper-container {
         padding-top: 0;
     }
+    a.button {
+        margin: 6% auto;
+    }
     section {
         min-height: 775px;
     }
