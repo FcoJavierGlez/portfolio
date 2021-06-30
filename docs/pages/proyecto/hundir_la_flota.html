@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Francisco Javier González Sabariego">
+    <meta name="description" content="Portfolio de Francisco Javier González Sabariego">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Jquery UI CSS -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- jQuery 3.6.0 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery UI 1.12.0 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- My Script -->
+    <script src="../../js/proyecto.js"></script>
+
+    <title>Portfolio - FJGS</title>
+</head>
+<body>
+    <nav class="black">
+        <div>
+            <div>
+                <a href="../../index.html"><i class="fas fa-home"></i></a>
+                <a href="../../index.html#proyectos">Proyectos</a>
+                <a href="../../index.html#autor">Autor</a>
+            </div>
+            <div>
+                <a href="https://github.com/FcoJavierGlez" target="_blank" rel="noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/Fco_Javier_Glez" target="_blank" rel="noreferrer">
+                    <i class="fab fa-twitter-square"></i></i>
+                </a>
+                <a href="https://www.linkedin.com/in/francisco-javier-gonz%C3%A1lez-sabariego-51052a175/" target="_blank" rel="noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:FJGS_86@hotmail.com?Subject=Contacto%20desde%20portfolio" target="_blank" rel="noreferrer">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="proyecto">
+        <div class="container">
+            <div class="title">
+                <h2>Hundir la flota</h2>
+                <hr>
+                <h6>Juego de Hundir la flota</h6>
+            </div>
+            <div class="links">
+                <a href="https://github.com/FcoJavierGlez/hundir_la_flota_PHP" class="github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                </a>
+                <!-- <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube">
+                    </i> Demo
+                </a> -->
+                <!-- <a href="#" class="deploy" target="_blank">
+                    <i class="fas fa-globe"></i> Demo
+                </a> -->
+            </div>
+            <article>
+                <div class="tech">
+                    <img src="https://img.shields.io/badge/PHP-7.4.1-9cf" alt="version_php">
+                    <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version">
+                </div>
+                <div class="bookmark">
+                    <h4>Acerca del proyecto</h4>
+                    <hr>
+                </div>
+                <p>
+                    <b>Juego de Hundir la flota para 1 jugador vs IA</b>. Este proyecto emplea sesiones de PHP para su funcionamiento.
+                </p>
+                <p>
+                    La IA fue diseñada para jugar lo mejor posible sin hacer trampas. Para ello, empleé un sistema de "deducción" 
+                    del posicionamiento de los barcos enemigos estimándolo según los valores almacenados en su tablero.
+                </p>
+                <p>
+                    <b>El tablero de la IA está formado por casillas que poseen un valor numérico</b>. 
+                    Éste valor equivale a 1 punto + 1 punto adicional por cada casilla que rodee a ésta sin estar bombardeada. 
+                    Cuando una casilla es bombardeada pasa a valor 0 si había agua o -1 si ha impactado en barco, 
+                    y al hacer esto, las casillas que tenga a su alrededor pasarán a valer un punto menos.
+                </p>
+                <div class="example">
+                    <img src="../../img/examples/ejemplo_hundir_la_flota1.png" alt="ejemplo de agregar cuenta">
+                    <small>Ejemplo del tablero de la IA</small>
+                </div>
+                <p>
+                    <b>De esta forma, el tablero de la IA es un mapa con relieve donde, las casillas de mayor valor, 
+                    son las casillas donde con mayor probabilidad puede haber un barco del jugador humano. 
+                    Sería el equivalente a si un jugador humano ve un claro en el mapa enemigo tras varios impactos</b>.
+                </p>
+                <p>
+                    Una vez detectado un barco la IA activa el mecanismo para hundirlo y no desactivará dicho mecanismo hasta haberlo destruido.
+                    En cuanto el barco haya sido destruido, dado que los barcos no se pueden tocar en el tablero, la máquina descartará 
+                    las casillas en derredor por casillas equivalentes a agua (con la correspondiente reducción del valor de las casillas que, 
+                    a su vez, las rodean). <b>Haciendo de esta forma que la IA sea mucho más precisa y difícil de derrotar</b>.
+                </p>
+                <!-- <p class="alert alert-info"></p> -->
+                <!-- <p class="alert alert-danger"></p> -->
+
+                <div class="bookmark">
+                    <h4>Tecnologías empleadas</h4>
+                    <hr>
+                </div>
+                <div class="icon-tech">
+                    <div class="logo php" title="PHP"></div>
+                </div>
+                <p>
+                    El juego se ejecuta en un servidor <b>Apache</b> y emplea <b>PHP</b> para el uso de variables de sesión.
+                </p>
+
+                <div class="bookmark">
+                    <h4>¿Qué puede hacer?</h4>
+                    <hr>
+                </div>
+                <p class="alert alert-primary">
+                    <b>Jugar una partida al hundir la flota</b>. <u>La partida será un reto, la IA juega bien y sin hacer trampas.</u> ☁️
+                </p>
+                <div class="example">
+                    <img src="../../img/examples/ejemplo_hundir_la_flota2.png" alt="ejemplo de agregar cuenta">
+                    <small>Una partida del Hundir la flota</small>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

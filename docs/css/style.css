@@ -393,7 +393,11 @@ section.proyecto article {
     width: 100px;
 }
 .example {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     margin: 0 auto;
+    max-width: max-content;
     width: 95%;
 }
 .example img {
