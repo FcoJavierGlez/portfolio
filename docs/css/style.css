@@ -417,6 +417,7 @@ p.alert {
     flex-wrap: wrap;
     height: max-content;
     justify-content: center;
+    margin-bottom: 20px;
     row-gap: 15px;
 }
 .old-project.hovereffect {
