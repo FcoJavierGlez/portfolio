@@ -1,7 +1,7 @@
 const PARTICLES_CONF = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 50,
         "density": {
           "enable": true,
           "value_area": 800
@@ -36,12 +36,12 @@ const PARTICLES_CONF = {
         }
       },
       "size": {
-        "value": 3.5,
+        "value": 3,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 50,
-          "size_min": 0.8,
+          "size_min": 0.5,
           "sync": false
         }
       },

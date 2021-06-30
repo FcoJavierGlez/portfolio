@@ -8,9 +8,10 @@
 
     const getParticlesNumber = value => {
         if (window.innerWidth < 550 ) return 30;
-        else if (window.innerWidth < 750 ) return 45;
-        else if (window.innerWidth < 1050 ) return 60;
-        else return 75;
+        else if (window.innerWidth < 750 ) return 35;
+        else if (window.innerWidth > 750 ) return 40;
+        /* else if (window.innerWidth < 1050 ) return 60;
+        else return 75; */
     }
 
     document.addEventListener("DOMContentLoaded", () => {
