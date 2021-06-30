@@ -183,7 +183,7 @@ a:hover {
 a.button.other-projects {
     background-color: steelblue;
 }
-a.cv {
+a.button.cv {
     background-color: orange;
     margin: 50px auto;
 }
