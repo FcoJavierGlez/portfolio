@@ -443,7 +443,7 @@ p.alert {
 .autor-description b {
     background-color: white;
     color: darkblue;
-    padding: 3px;
+    padding: 6px 4px;
 }
 #photo-autor {
     background-image: url(../img/assets/FJGS.png);
