@@ -20,7 +20,7 @@
 
         /* Particles */
         PARTICLES_CONF.particles.number.value = getParticlesNumber(window.innerWidth);
-        if (window.innerWidth < 500) PARTICLES_CONF.particles.move.speed = 8;
+        if (window.innerWidth < 500) PARTICLES_CONF.particles.move.speed = 4;
     
         particlesJS('cover', PARTICLES_CONF);
     

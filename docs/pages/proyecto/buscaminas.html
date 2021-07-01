@@ -54,24 +54,23 @@
     <section class="proyecto">
         <div class="container">
             <div class="title">
-                <h2>Hundir la flota</h2>
+                <h2>Buscaminas</h2>
                 <hr>
-                <h6>Juego de Hundir la flota</h6>
+                <h6>Videojuego del Buscaminas</h6>
             </div>
             <div class="links">
-                <a href="https://github.com/FcoJavierGlez/hundir_la_flota_PHP" class="github" target="_blank">
+                <a href="https://github.com/FcoJavierGlez/buscaminas-JS" class="github" target="_blank">
                     <i class="fab fa-github"></i> Code
                 </a>
                 <!-- <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube">
                     </i> Demo
                 </a> -->
-                <!-- <a href="#" class="deploy" target="_blank">
+                <a href="https://fcojavierglez.github.io/buscaminas-JS/" class="deploy" target="_blank">
                     <i class="fas fa-globe"></i> Demo
-                </a> -->
+                </a>
             </div>
             <article>
                 <div class="tech">
-                    <img src="https://img.shields.io/badge/PHP-7.4.1-9cf" alt="version_php">
                     <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version">
                 </div>
                 <div class="bookmark">
@@ -79,34 +78,16 @@
                     <hr>
                 </div>
                 <p>
-                    <b>Juego de Hundir la flota para 1 jugador vs IA</b>. Este proyecto emplea sesiones de PHP para su funcionamiento.
+                    <b>El juego del Buscaminas</b>, juego clásico incorporado en Windows.
                 </p>
                 <p>
-                    La IA fue diseñada para jugar lo mejor posible sin hacer trampas. Para ello, empleé un sistema de "deducción" 
-                    del posicionamiento de los barcos enemigos estimándolo según los valores almacenados en su tablero.
+                    <b>Configura la difultad del juego y ¡¡trata de batir tu proio record!!</b>
                 </p>
-                <p>
-                    <b>El tablero de la IA está formado por casillas que poseen un valor numérico</b>. 
-                    Éste valor equivale a 1 punto + 1 punto adicional por cada casilla que rodee a ésta sin estar bombardeada. 
-                    Cuando una casilla es bombardeada pasa a valor 0 si había agua o -1 si ha impactado en barco, 
-                    y al hacer esto, las casillas que tenga a su alrededor pasarán a valer un punto menos.
+                <p class="alert alert-info">
+                    <b>Este proyecto</b> fue entregado como un ejercicio de clase y 
+                    <b>se trata de una mejora de este otro proyecto personal: 
+                    <a href="https://github.com/FcoJavierGlez/buscaminas_js">Antiguo buscaminas</a></b>
                 </p>
-                <div class="example">
-                    <img src="../../img/examples/ejemplo_hundir_la_flota1.png" alt="ejemplo de agregar cuenta">
-                    <small>Ejemplo del tablero de la IA</small>
-                </div>
-                <p>
-                    <b>De esta forma, el tablero de la IA es un mapa con relieve donde, las casillas de mayor valor, 
-                    son las casillas donde con mayor probabilidad puede haber un barco del jugador humano. 
-                    Sería el equivalente a si un jugador humano ve un claro en el mapa enemigo tras varios impactos</b>.
-                </p>
-                <p>
-                    Una vez detectado un barco la IA activa el mecanismo para hundirlo y no lo desactivará hasta haberlo destruido.
-                    En cuanto el barco haya sido destruido, dado que los barcos no se pueden tocar en el tablero, la máquina descartará 
-                    las casillas en derredor por casillas equivalentes a agua (con la correspondiente reducción del valor de las casillas que, 
-                    a su vez, las rodean). <b>Haciendo de esta forma que la IA sea mucho más precisa y difícil de derrotar</b>.
-                </p>
-                <!-- <p class="alert alert-info"></p> -->
                 <!-- <p class="alert alert-danger"></p> -->
 
                 <div class="bookmark">
@@ -114,10 +95,13 @@
                     <hr>
                 </div>
                 <div class="icon-tech">
-                    <div class="logo php" title="PHP"></div>
+                    <div class="logo html" title="HTML5"></div>
+                    <div class="logo css" title="CSS3"></div>
+                    <div class="logo javascript" title="JavaScript"></div>
                 </div>
                 <p>
-                    El juego se ejecuta en un servidor <b>Apache</b> y emplea <b>PHP</b> para el uso de variables de sesión.
+                    Para este proyecto únicamente he necesitado emplear <b>HTML5</b> como lenguaje de marcas, 
+                    <b>CSS</b> para definir las hojas de estilos y <b>JavaScript</b> Vanilla para la lógica del juego.
                 </p>
 
                 <div class="bookmark">
@@ -125,11 +109,11 @@
                     <hr>
                 </div>
                 <p class="alert alert-primary">
-                    <b>Jugar una partida al hundir la flota</b>. <u>La partida será un reto, la IA juega bien y sin hacer trampas.</u> ☁️
+                    <b>Jugar al Buscaminas</b>, <u>similar al de Windows</u>
                 </p>
                 <div class="example">
-                    <img src="../../img/examples/ejemplo_hundir_la_flota2.png" alt="ejemplo de partida">
-                    <small>Una partida del Hundir la flota</small>
+                    <img src="../../img/examples/ejemplo_buscaminas.png" alt="ejemplo de partida finalizada">
+                    <small>Partida de Buscaminas finalizada</small>
                 </div>
             </article>
         </div>

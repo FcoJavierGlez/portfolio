@@ -189,10 +189,10 @@ a.button.cv {
     color: black;
     margin: 50px auto;
 }
-.content-gears {
+.content-button-logo {
     flex-grow: 1;
 }
-.gears {
+.button-logo {
     background-color: white;
     border: 2px solid black;
     border-radius: 50%;
@@ -411,13 +411,11 @@ p.alert {
 /* Old projects */
 .year-projects {
     align-items: center;
-    column-gap: 15px;
     display: flex;
     flex-wrap: wrap;
-    height: max-content;
+    gap: 15px;
     justify-content: center;
     margin-bottom: 20px;
-    row-gap: 15px;
 }
 .old-project.hovereffect {
     height: 275px;
@@ -481,13 +479,11 @@ div#photo-autor > a {
 }
 
 .qualifications {
-    align-items: center;
-    column-gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
     padding: 10px 5px;
-    row-gap: 20px;
 }
 .qualifications a:hover {
     text-decoration: none;

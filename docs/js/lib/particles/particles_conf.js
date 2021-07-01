@@ -54,7 +54,7 @@ const PARTICLES_CONF = {
       },
       "move": {
         "enable": true,
-        "speed": 5,
+        "speed": 3,
         "direction": "none",
         "random": false,
         "straight": false,
