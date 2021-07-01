@@ -78,7 +78,6 @@ nav .fas:hover {
 }
 
 @keyframes scaleUp {
-    from { transform: scale(1); }
     to { transform: scale(1.05); }
 }
 
@@ -132,6 +131,9 @@ nav .fas:hover {
 }
 
 /* Section */
+.title h2 {
+    font-weight: bold;
+}
 .title hr {
     border-color: red;
     margin: 10px auto 15px;
@@ -415,7 +417,7 @@ p.alert {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .old-project.hovereffect {
     height: 275px;
@@ -476,6 +478,9 @@ div#photo-autor > a {
 }
 .projects {
     margin-top: 30px;
+}
+.projects h4 {
+    font-weight: bold;
 }
 
 .qualifications {
