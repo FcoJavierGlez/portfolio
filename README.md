@@ -4,9 +4,12 @@
 <div style="text-align: left;">
     <img src="https://img.shields.io/badge/jQuery-3.6.0-yellow" alt="jQuery_version">
     <img src="https://img.shields.io/badge/jQuery_UI-1.12.0-orange" alt="jQuery-UI_version">
-    <img src="https://img.shields.io/badge/particles.js-2.0.0-yellow" alt="particles.js_version">
-    <img src="https://img.shields.io/badge/Bootstrap-4.0.0-blueviolet" alt="bootstrap_version">
-    <img src="https://img.shields.io/badge/version-0.1.0-blue" alt="version">
+    <img src="https://img.shields.io/badge/Particles.js-2.0.0-yellow" alt="Particles.js_version">
+    <img src="https://img.shields.io/badge/Swiper-6.7.1-yellow" alt="Swiper_version">
+    <img src="https://img.shields.io/badge/Charts.js-3.4.0-yellow" alt="Charts.js_version">
+    <img src="https://img.shields.io/badge/Bootstrap-4.0.0-blueviolet" alt="Bootstrap_version">
+    <img src="https://img.shields.io/badge/Bootstrap_image_hover-1.0.2-blueviolet" alt="Bootstrap_image_hover_version">
+    <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version">
     <a href="https://twitter.com/intent/follow?screen_name=Fco_Javier_Glez" target="_blank">
         <img src="https://img.shields.io/twitter/follow/Fco_Javier_Glez?style=social&logo=twitter" alt="follow on Twitter">
     </a>
@@ -15,8 +18,11 @@
 ## Libraries:
 - [jQuery](https://jquery.com/)
 - [jQuery UI](https://jqueryui.com/)
-- [particles.js](https://github.com/VincentGarreau/particles.js/)
+- [Particles.js](https://github.com/VincentGarreau/particles.js/)
+- [Swiper](https://swiperjs.com/)
+- [Charts.js](https://www.chartjs.org/)
 - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [Bootstrap onHover Effects](https://github.com/miketricking/bootstrap-image-hover)
 
 ## GitPages:
-[Portfolio Francisco Javier González Sabariego](https://fcojavierglez.github.io/portfolio2/)
+[Portfolio Francisco Javier González Sabariego](https://fcojavierglez.github.io/portfolio/)
