@@ -268,6 +268,12 @@ a.button.cv {
 .javascript {
     background-image: url(../img/assets/logos/javascript.png);
 }
+.mongodb {
+    background-image: url(../img/assets/logos/mongodb.png);
+}
+.mongoose {
+    background-image: url(../img/assets/logos/mongoose.png);
+}
 .mysql {
     background-image: url(../img/assets/logos/mysql.png);
 }

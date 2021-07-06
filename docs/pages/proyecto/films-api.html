@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Francisco Javier González Sabariego">
+    <meta name="description" content="Portfolio de Francisco Javier González Sabariego">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Jquery UI CSS -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- jQuery 3.6.0 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery UI 1.12.0 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- My Script -->
+    <script src="../../js/proyecto.js"></script>
+
+    <title>Portfolio - FJGS</title>
+</head>
+<body>
+    <noscript><h1>Esta página requiere el uso de JavaScript</h1></noscript>
+    <nav class="black">
+        <div>
+            <div>
+                <a href="../../index.html"><i class="fas fa-home"></i></a>
+                <a href="../../index.html#proyectos">Proyectos</a>
+                <a href="../../index.html#autor">Autor</a>
+            </div>
+            <div>
+                <a href="https://github.com/FcoJavierGlez" target="_blank" rel="noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/Fco_Javier_Glez" target="_blank" rel="noreferrer">
+                    <i class="fab fa-twitter-square"></i></i>
+                </a>
+                <a href="https://www.linkedin.com/in/francisco-javier-gonz%C3%A1lez-sabariego-51052a175/" target="_blank" rel="noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:FJGS_86@hotmail.com?Subject=Contacto%20desde%20portfolio" target="_blank" rel="noreferrer">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="proyecto">
+        <div class="container">
+            <div class="title">
+                <h2>Films-API</h2>
+                <hr>
+                <h6>API-REST de películas</h6>
+            </div>
+            <div class="links">
+                <a href="https://github.com/FcoJavierGlez/films-api" class="github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                </a>
+                <!-- <a href="#" class="youtube" target="_blank"><i class="fab fa-youtube">
+                    </i> Demo
+                </a> -->
+                <!-- <a href="#" class="deploy" target="_blank">
+                    <i class="fas fa-globe"></i> Demo
+                </a> -->
+            </div>
+            <article>
+                <div class="tech">
+                    <img src="https://img.shields.io/badge/Node.js-12.14.1-green" alt="Node.js_version">
+                    <img src="https://img.shields.io/badge/Express-4.17.1-lightgray" alt="Express_version">
+                    <img src="https://img.shields.io/badge/MongoDB-4.4.6-green" alt="MongoDB_version">
+                    <img src="https://img.shields.io/badge/Mongoose-5.13.2-greenyellow" alt="Mongoose_version">
+                    <img src="https://img.shields.io/badge/version-0.1.0-blue" alt="version">
+                    <img src="https://img.shields.io/badge/License-MIT-green" alt="license">
+                </div>
+                <div class="bookmark">
+                    <h4>Acerca del proyecto</h4>
+                    <hr>
+                </div>
+                <p class="alert alert-danger">
+                    <b>Actualmente en desarrollo</b>
+                </p>
+                <p>
+                    El proyecto es una API-REST que permite a través de un sistema de enrutamiento y peticiones HTTP 
+                    administrar una colección de películas con toda la información asociada a ellas:
+                </p>                
+                <ul>
+                    <li><b>Título</b></li>
+                    <li><b>Duración</b></li>
+                    <li><b>Sinopsis</b></li>
+                    <li><b>Trailers</b></li>
+                    <li><b>Fotos</b></li>
+                    <li><b>Directores</b></li>
+                    <li><b>Actores/actrices</b></li>
+                    <li><b>Guionistas</b></li>
+                </ul>
+                <p>
+                    <b>El objetivo final es crear una SPA con Angular 12</b> y comunicarla con esta API-REST 
+                    <b>para realizar una página similar a IMDb</b>
+                </p>
+                <!-- <p class="alert alert-info"></p> -->
+                <!-- <p class="alert alert-danger"></p> -->
+
+                <div class="bookmark">
+                    <h4>Tecnologías empleadas</h4>
+                    <hr>
+                </div>
+                <div class="icon-tech">
+                    <div class="logo express" title="Express"></div>
+                    <div class="logo mongodb" title="MongoDB"></div>
+                    <div class="logo mongoose" title="Mongoose"></div>
+                </div>
+                <p>
+                    Films-API se ejecuta en un servidor creado con el framework <b>Express</b>, emplea <b>MongoDB</b> como base de datos no relacional
+                    y emplea el ODM <b>Mongoose</b> para la creación del CRUD.
+                </p>
+
+                <div class="bookmark">
+                    <h4>¿Qué puede hacer?</h4>
+                    <hr>
+                </div>
+                <p class="alert alert-primary">
+                    <b>Gestionar una colección de películas</b> <u>y la información asociada a ellas como directores, guionistas, etc</u>
+                </p>
+                <div class="example">
+                    <img src="../../img/examples/ejemplo_films-api.png" alt="ejemplo de agregar cuenta">
+                    <small>Vista de una petición a la API a la ruta raíz de películas con método GET</small>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>
