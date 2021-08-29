@@ -32,6 +32,14 @@ p {
     text-align: justify;
 }
 
+li {
+    text-align: justify;
+}
+
+li p {
+    padding: 0;
+}
+
 .text-white {
     color: white;
 }

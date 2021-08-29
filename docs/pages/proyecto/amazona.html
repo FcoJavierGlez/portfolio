@@ -116,6 +116,31 @@
                 <ul>
                     <li><b>Enrutadores</b> para crear los endpoints, de la <b>API-REST</b>, que serán atacados desde el cliente usando peticiones HTTP: <b>POST, GET, PUT, DELETE</b>.</li>
                     <li><b>CRUD</b> creado con Mongoose (ODM de MongoDB) para las distintas acciones con la base de datos: <b>Create, Read, Update & Delete</b>.</li>
+                    <li>
+                        <b>JWT (JSON Web Token)</b> tecnología empleada para validar las acciones del usuario. Cuando un usuario envíe sus credenciales al servicio de autenticación, 
+                        al iniciar sesión en su cuenta, el servidor le mandará al cliente un token y un token de refresco tras comprobar la autenticidad del usuario.
+                        Cada vez que el usuario realice una acción que modifique su cuenta como, por ejemplo:
+                        <ul>
+                            <li>Añadir un producto al carrito.</li>
+                            <li>Añadir, editar o eliminar una dirección.</li>
+                            <li>Añadir o eliminar una tarjeta de crédito.</li>
+                            <li>Realizar un pedido.</li>
+                        </ul>
+                        <p>
+                            Deberá enviar al servidor el token que le fue entregado al iniciar sesión. El servidor se encargrá de validar el token comprobando que haya sido firmado por él mismo 
+                            (haciendo uso de su clave secreta) y que no haya vencido su caducidad, para así poder realizar la acción requerida por el usuario.
+                        </p>
+                        <p>
+                            En caso de que la cookie donde esté almacenado el token, haya caducado, si la app conserva el token de refresco, 
+                            previamente a la acción que requiere el token se mandará al servicio de autenticación el token de refresco. 
+                        </p>
+                        <p>
+                            En caso de que el token de refresco haya sido firmado por el servidor, 
+                            que no haya vencido su fecha límite y que sea el mismo token de refresco que se le mandó al usuario cuyo ID coincida 
+                            con el ID almacenado en el propio token, el servidor generá un nuevo token y otro de refresco y se los enviará al usuario, 
+                            permitiendo realizar la acción solicitada sin que el usuario tenga que volver a iniciar sesión para obtener el token requerido.
+                        </p>
+                    </li>
                 </ul>
                 <p class="mt-4"><b>Demo de Amazona:</b></p>
                 <a href="https://www.youtube.com/watch?v=g4le1tt5_as" target="_blank">
