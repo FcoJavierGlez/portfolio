@@ -22,7 +22,7 @@ const data_ts = {
     ],
     datasets: [{
         label: 'TypeScript',
-        data: [35, 65],
+        data: [75, 25],
         backgroundColor: [
             'rgb(0, 100, 200)',
             'rgba(0,0,0,0)',
@@ -108,7 +108,7 @@ const data_angular = {
     ],
     datasets: [{
         label: 'Angular',
-        data: [25, 75],
+        data: [65, 35],
         backgroundColor: [
             'rgb(230, 25, 25)',
             'rgba(0,0,0,0)',
@@ -125,7 +125,7 @@ const data_express = {
     ],
     datasets: [{
         label: 'Express',
-        data: [30, 70],
+        data: [40, 60],
         backgroundColor: [
             'rgb(200, 200, 200)',
             'rgba(0,0,0,0)',
@@ -159,7 +159,7 @@ const data_mongoose = {
     ],
     datasets: [{
         label: 'Mongoose',
-        data: [15, 85],
+        data: [45, 55],
         backgroundColor: [
             'rgb(170, 0, 0)',
             'rgba(0,0,0,0)',
@@ -194,7 +194,7 @@ const data_mongodb = {
     ],
     datasets: [{
         label: 'MongoDB',
-        data: [20, 80],
+        data: [50, 50],
         backgroundColor: [
             'rgb(0, 125, 0)',
             'rgba(0,0,0,0)',
