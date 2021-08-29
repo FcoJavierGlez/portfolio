@@ -131,14 +131,14 @@
                             (haciendo uso de su clave secreta) y que no haya vencido su caducidad, para así poder realizar la acción requerida por el usuario.
                         </p>
                         <p>
-                            En caso de que la cookie donde esté almacenado el token, haya caducado, si la app conserva el token de refresco, 
+                            En caso de que la cookie donde esté almacenado el token haya caducado, si la app conserva el token de refresco, 
                             previamente a la acción que requiere el token se mandará al servicio de autenticación el token de refresco. 
                         </p>
                         <p>
                             En caso de que el token de refresco haya sido firmado por el servidor, 
                             que no haya vencido su fecha límite y que sea el mismo token de refresco que se le mandó al usuario cuyo ID coincida 
-                            con el ID almacenado en el propio token, el servidor generá un nuevo token y otro de refresco y se los enviará al usuario, 
-                            permitiendo realizar la acción solicitada sin que el usuario tenga que volver a iniciar sesión para obtener el token requerido.
+                            con el ID almacenado en el propio token, el servidor generá un nuevo token y otro de refresco y se los enviará al cliente, 
+                            permitiendo realizar la acción solicitada sin que el usuario tenga que volver a iniciar sesión para obtener un nuevo token.
                         </p>
                     </li>
                 </ul>
