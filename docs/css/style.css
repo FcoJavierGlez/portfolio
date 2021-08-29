@@ -252,11 +252,21 @@ a.button.cv {
 .angular {
     background-image: url(../img/assets/logos/angular.png);
 }
+.angular_material {
+    background-image: url(../img/assets/logos/angular_material.png);
+}
+.bootstrap {
+    background-image: url(../img/assets/logos/bootstrap.png);
+}
 .css {
     background-image: url(../img/assets/logos/css.png);
 }
+.dotenv {
+    background-image: url(../img/assets/logos/dotenv.png);
+}
 .express {
     background-image: url(../img/assets/logos/express.png);
+    border-radius: 50%;
 }
 .html {
     background-image: url(../img/assets/logos/html.png);
@@ -267,6 +277,10 @@ a.button.cv {
 }
 .javascript {
     background-image: url(../img/assets/logos/javascript.png);
+}
+.jwt {
+    background-image: url(../img/assets/logos/jwt.png);
+    border-radius: 50%;
 }
 .mongodb {
     background-image: url(../img/assets/logos/mongodb.png);
@@ -280,6 +294,9 @@ a.button.cv {
 .next {
     background-image: url(../img/assets/logos/next.png);
     border-radius: 50%;
+}
+.node_mailer {
+    background-image: url(../img/assets/logos/node_mailer.png);
 }
 .php {
     background-image: url(../img/assets/logos/php.png);
