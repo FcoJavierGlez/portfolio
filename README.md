@@ -30,4 +30,3 @@
 ## RRSS:
 - [GitHub](https://github.com/FcoJavierGlez)
 - [LinkedIn](https://www.linkedin.com/in/francisco-javier-gonz%C3%A1lez-sabariego-51052a175/)
-- [Twitter](https://twitter.com/Fco_Javier_Glez)
