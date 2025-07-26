@@ -155,7 +155,7 @@ section.proyecto {
     min-height: 90vh;
     padding-bottom: 30px;
 }
-section#proyectos {
+section#experiencia {
     background: linear-gradient(180deg, rgba(255,255,255) 0%, rgba(248,248,255) 25%);
 }
 section#autor {
@@ -514,25 +514,27 @@ div#photo-autor > a {
     font-weight: bold;
 }
 
-.qualifications {
+.qualifications, .companies, .clients {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-items: center;
     padding: 10px 5px;
 }
-.qualifications a:hover {
+.clients {
+    display: flex;
+    justify-content: center;
+}
+.qualifications, .companies, .clients a:hover {
     text-decoration: none;
 }
-.qualification {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.qualification, 
+.company {
     border-radius: 15px;
     height: 200px;
     width: 200px;
 }
-.qualification h4 {
+.qualification h4, .company h4 {
     color: white;
     font-size: 20px;
     margin: 0 auto;
@@ -541,10 +543,26 @@ div#photo-autor > a {
     top: 135px;
     width: 95%;
 }
-.openwebinars {
-    background-image: url(../img/qualifications/openwebinars.png);
+
+.ntt_data {
+    background: url(../img/companies/ntt_data.png) center/80% no-repeat rgb(0, 114, 187);
+}
+.mutua_madrilena {
+    background: url(../img/companies/mutua_madrilena.png) center/80% no-repeat white;
+}
+.caixabank {
+    background: url(../img/companies/caixabank.svg) center/80% no-repeat white;
 }
 
+.openwebinars {
+    background: url(../img/qualifications/openwebinars.png) center/80% no-repeat rgb(56, 56, 56);
+}
+
+@media screen and (min-width: 300px) {
+    .intro-message p {
+        font-size: 30px;
+    }
+}
 @media screen and (min-width: 550px) {
     * {
         font-size: 1rem;
@@ -553,7 +571,7 @@ div#photo-autor > a {
         padding-top: 15px;
     }
     .intro-message p {
-        font-size: 42px;
+        font-size: 35px;
     }
 }
 @media screen and (min-width: 750px) {
@@ -571,6 +589,9 @@ div#photo-autor > a {
     .intro::after {
         transform: rotate( 353deg );
     }
+    .intro-message p {
+        font-size: 38px;
+    }
     .swiper-container {
         padding-top: 25px;
     }
@@ -587,11 +608,11 @@ div#photo-autor > a {
         width: 135px;
     }
 }
-@media screen and (min-width: 860px) {
+/* @media screen and (min-width: 860px) {
     .intro-message p {
         font-size: 50px;
     }
-}
+} */
 @media screen and (min-width: 1100px) {
     nav > div a {
         font-size: 18px;
@@ -604,6 +625,9 @@ div#photo-autor > a {
     .intro {
         margin: 0 20%;
         width: 60%;
+    }
+    .intro-message p {
+        font-size: 42px;
     }
     .swiper-button-prev {
         left: 4px;
@@ -635,7 +659,7 @@ div#photo-autor > a {
 }
 @media screen and (min-width: 1200px) {
     .intro-message p {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -660,9 +684,9 @@ div#photo-autor > a {
     .intro {
         top: 140px;
     }
-    .intro-message p {
+    /* .intro-message p {
         font-size: 35px;
-    }
+    } */
     section .container {
         top: 20vh;
     }

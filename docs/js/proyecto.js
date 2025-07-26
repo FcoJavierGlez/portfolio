@@ -5,10 +5,17 @@
  */
 document.addEventListener("DOMContentLoaded", () => {
 
-    //Jquey UI - Tooltip
-    $( function() {
-      $( document ).tooltip({
-        track: true
-      });
+  const back = document.getElementById("back");
+
+  back.addEventListener( "click", event => {
+    event.preventDefault();
+    history.back();
+  } );
+
+  //Jquey UI - Tooltip
+  $( function() {
+    $( document ).tooltip({
+      track: true
     });
+  });
 });
